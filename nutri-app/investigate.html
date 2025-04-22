@@ -1,0 +1,40 @@
+<!-- investigate.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriFit - Dados Pessoais</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="investigate">
+  <div class="container">
+    <h1>Dados para Dieta</h1>
+    <form id="dataForm">
+      <select required>
+        <option value="">Objetivo</option>
+        <option value="ganho">Ganho de Massa</option>
+        <option value="perda">Perda de Peso</option>
+        <option value="definicao">Definição</option>
+      </select>
+      <input type="number" placeholder="Idade" required>
+      <input type="number" placeholder="Peso (kg)" required>
+      <input type="number" placeholder="Altura (cm)" required>
+      <select required>
+        <option value="">Sexo</option>
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+      </select>
+      <select required>
+        <option value="">Atividade Física</option>
+        <option value="leve">Leve</option>
+        <option value="moderada">Moderada</option>
+        <option value="intensa">Intensa</option>
+      </select>
+      <input type="number" placeholder="Treinos por semana" required>
+      <button type="submit">Calcular Dieta</button>
+    </form>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
